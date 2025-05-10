@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seu-site-navegavis.netlify.app/sitemap.xml 

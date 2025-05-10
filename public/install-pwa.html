@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instalar NavegaVis como PWA</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      color: #2563eb;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 10px;
+    }
+
+    .logo {
+      display: block;
+      margin: 20px auto;
+      max-width: 200px;
+    }
+
+    .step {
+      margin-bottom: 30px;
+      background-color: #f9fafb;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid #2563eb;
+    }
+
+    .step h2 {
+      margin-top: 0;
+      color: #2563eb;
+    }
+
+    .browser {
+      margin-top: 40px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #111827;
+        color: #e5e7eb;
+      }
+
+      .step {
+        background-color: #1f2937;
+        border-color: #3b82f6;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Instalar NavegaVis como Aplicativo</h1>
+
+  <img src="/icons/icon-192x192.png" alt="Logo NavegaVis" class="logo">
+
+  <p>O NavegaVis pode ser instalado como um aplicativo em seu dispositivo. Assim, você terá acesso rápido e uso offline.</p>
+
+  <div class="browser">
+    <h2>No Chrome (Android)</h2>
+
+    <div class="step">
+      <h3>Passo 1</h3>
+      <p>Toque no ícone de menu (três pontos) no canto superior direito do navegador.</p>
+    </div>
+
+    <div class="step">
+      <h3>Passo 2</h3>
+      <p>Selecione "Instalar aplicativo" ou "Adicionar à tela inicial".</p>
+    </div>
+
+    <div class="step">
+      <h3>Passo 3</h3>
+      <p>Confirme a instalação.</p>
+    </div>
+  </div>
+
+  <div class="browser">
+    <h2>No Safari (iOS)</h2>
+
+    <div class="step">
+      <h3>Passo 1</h3>
+      <p>Toque no ícone de compartilhamento (quadrado com seta para cima) na barra inferior.</p>
+    </div>
+
+    <div class="step">
+      <h3>Passo 2</h3>
+      <p>Role para baixo e toque em "Adicionar à Tela de Início".</p>
+    </div>
+
+    <div class="step">
+      <h3>Passo 3</h3>
+      <p>Confirme tocando em "Adicionar" no canto superior direito.</p>
+    </div>
+  </div>
+
+  <div class="browser">
+    <h2>No Chrome/Edge/Firefox (Desktop)</h2>
+
+    <div class="step">
+      <h3>Passo 1</h3>
+      <p>Clique no ícone de instalação na barra de endereço (geralmente um ícone de "+").</p>
+    </div>
+
+    <div class="step">
+      <h3>Passo 2</h3>
+      <p>Clique em "Instalar" no prompt que aparecer.</p>
+    </div>
+  </div>
+
+  <p><a href="/">Voltar para a página inicial</a></p>
+
+  <script>
+    // Verifica se o navegador já possui a PWA instalada
+    window.addEventListener('load', () => {
+      if (window.matchMedia('(display-mode: standalone)').matches) {
+        document.body.innerHTML = `
+                    <h1>NavegaVis já está instalado!</h1>
+                    <p>Você já tem o NavegaVis instalado como um aplicativo.</p>
+                    <p><a href="/">Voltar para a página inicial</a></p>
+                `;
+      }
+    });
+  </script>
+</body>
+
+</html>
