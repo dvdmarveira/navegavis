@@ -1,6 +1,5 @@
 # NavegaVis - Sistema de Navegação Indoor para Acessibilidade
 
-![NavegaVis](https://via.placeholder.com/800x400?text=NavegaVis)
 
 ## Sobre o Projeto
 
@@ -135,22 +134,4 @@ Para adicionar ou modificar o mapa do ambiente:
 1. Edite o arquivo `lib/map-data.ts`
 2. Modifique os arrays `indoorMap` (objetos do mapa), `wifiAccessPoints` (pontos de acesso) e `routePoints` (pontos da rota)
 
-## Contribuição
 
-Contribuições são bem-vindas! Se você deseja melhorar o NavegaVis:
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/amazing-feature`)
-3. Commit suas mudanças (`git commit -m 'Add some amazing feature'`)
-4. Push para a branch (`git push origin feature/amazing-feature`)
-5. Abra um Pull Request
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
-
-## Contato
-
-Nome - [email@example.com](mailto:email@example.com)
-
-Link do Projeto: [https://github.com/seu-usuario/navegavis](https://github.com/seu-usuario/navegavis)
