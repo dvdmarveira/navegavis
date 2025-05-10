@@ -81,7 +81,7 @@ O simulador de coleta de sinais mostra o processo de criação da base de dados 
 1. Clone o repositório
 
    ```bash
-   git clone https://github.com/seu-usuario/navegavis.git
+   git clone https://github.com/dvdmarveira/navegavis.git
    cd navegavis
    ```
 
